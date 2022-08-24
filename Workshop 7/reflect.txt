@@ -1,0 +1,46 @@
+*****************************************************************************
+                              Reflection
+                             Workshop - #7
+Full Name  :    Maikel Mirzadegan   
+Student ID#:    032299158
+Email      :    mmirzadegan@senecacollege.ca
+Section    :    NPP
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. Describe the benefits and advantages of using user-defined types (structures) in this workshop.  You must explain 
+your answer using an example from this workshop. 
+
+The benefits of using user-defined types in this workshop were that it allowed me to contain a large set of data in single structures and this made my main 
+function simpler. Additonally, using user-defined types beneficial because structures allow for resuability and I was able to use the same structures for both parts
+of workshop.
+struct PlayerInfo
+{
+  int lives;                     // number of lives player can have in a game
+  char icon;                     // characters symbol for player
+  int treasuresFound;            // counter for number of treasures found
+  char history[MAX_PATH_LENGTH]; // array for past positions
+} player;
+This example demonstrates the use of multiple variables inside a structure. Additionally, the advantage of a structure is that
+you can change the variable information from within the structure instead of inside main, which is great for resuability.
+
+
+2. If we enhanced this workshop to keep a history of games played including the endgame results, briefly describe 
+what two major logical changes you would have to make to your program to make this possible? 
+
+First I would add a variable to the game structure like game.history[MAX_PATH_LENGTH] for the history of games played.
+Secondly, I would add arrays for keep history of games played and endgame results in the same way as I did with the history array
+in my program.
+
+
+
+3. What part of this workshop did you spend the most time working on?  What did you do to overcome your 
+difficulties? 
+
+I spent the majority of my time on this workshop with understanding and implementing the board options that you need to print
+like $ or ! if its a treasure or a bomb. This was something I hard time figuring out how to implement and it cost me a lot of time trying different
+things to see what would work. To overcome my difficulties it required me trying to understand loops better and how I could utilize them so that
+I could generate the right values to print. Overcoming this also required some trial and error.
