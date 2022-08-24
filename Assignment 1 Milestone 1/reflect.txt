@@ -1,0 +1,49 @@
+*****************************************************************************
+                              Reflection
+                             Assignment - #1 Milestone #1
+Full Name  :    Maikel Mirzadegan   
+Student ID#:    032299158
+Email      :    mmirzadegan@senecacollege.ca
+Section    :    NPP
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. From the core functions library, what function was the most challenging to define and clearly describe 
+the challenge(s) including how you managed to overcome them in the context of the methods used in 
+preparing your logic, debugging, and testing.
+
+void displayFormattedPhone(char* validatedString) from the core functions library was the hardest function to define because
+I wasn't sure about how to get the desired output for the empty phone number without inputting a value. In order to overcome
+this challenge I started very simply with my first if statement if (validatedString == NULL) and realized that I could
+display all the necessary strings in the same way with if statements. This also required me watching variables with the 
+debugger and making sure it was working and giving the right output as required.
+
+2. It is good practice to initialize variables to a "safe empty state". With respect to variable initialization, 
+what is the difference between assigning 0 and NULL? When do you use one over the other and why?
+
+When you initialize a variable there is no ambiguity to the value of the variable and this is a good thing. Initializing
+a variable to null is usually used with pointers and if there is no other value explicitly assigned to it, to assign a temporary
+memory location and avoid compilation errors. However, zero is a value not a memory location, it is a value you can assign to a variable
+so that it can be initialized. Null is used as a pointer constant so that you can initialize pointers that don't point to anything yet
+and zero with non pointer type variables that need the variables to be initialized to zero.
+
+3. Your friend (also a beginner programmer) is having difficulty understanding how to manage the 
+"standard input buffer" (particularly when there is residual data). Your friend has read all the course 
+notes, Googled the topic, followed along with course lectures about this topic, but is still struggling with 
+this concept. Describe exactly how you would attempt to help your friend understand this topic?
+
+To help my friend I would explain that the system will store keyboard input to a buffer which is a small region of memory that temporarily stores data,
+and as the program requires data it will retrieve the data from the buffered input. However to make sure that the input will be synchronized with the
+program execution the buffered input needs to be managed by clearing it like this example:
+void clear(void)
+{
+    while (getchar() != '\n')
+    {
+        ;  // empty statement intentional
+    }
+}
+This will avoid the buffer being stored with values of a previously used variable, causing unwanted results and unexpected output, and is how
+we can manage the standard input buffer.
