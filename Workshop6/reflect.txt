@@ -1,0 +1,50 @@
+*****************************************************************************
+                              Reflection
+                             Workshop - #6
+Full Name  :    Maikel Mirzadegan   
+Student ID#:    032299158
+Email      :    mmirzadegan@senecacollege.ca
+Section    :    NPP
+
+Authenticity Declaration:
+I declare this submission is the result of my own work and has not been
+shared with any other student or 3rd party content provider. This submitted
+piece of work is entirely of my own creation.
+*****************************************************************************
+1. Parallel arrays provide us the ability to group related data.  Using what you coded in this workshop, briefly 
+explain how you linked related data for any given item in the dataset?  What was the ‘key’ used to accomplish 
+this?
+
+I linked related data for a given dataset by placing the arrays inside of a single for loop that iterates for the
+same range for all the arrays using the iterator variable i. Additionally, because of this they all have the same
+index and start and end in the same place. The priority is the key in this because when we know the priority level 
+we can also determine the corresponding finance options and  price.
+
+2. Why do you think it is common practice to iterate arrays initializing the iterator variable to zero and not to a 
+value of one?  Justify your answer using an example from this workshop.
+
+I think it is common practice to iterate arrays and initialize the iterator variable to zero because the iterator will be what
+continues to store the values to the arrays as it goes through the loop and since index numbering starts at zero, the 
+iterator variable needs to be assigned a value of zero.
+
+for (i = 0; i <= numOfItems - 1; i++)
+    {            if (cost[i] < minItemCost)
+            {
+                printf("      ERROR: Cost must be at least $100.00\n");
+            }
+            else
+            {
+                continueLooping = 1; // exits the loop
+            }
+    }
+This example demonstrates the for loop being the iterator of the arrays and that the iterator variable i=0 starts at zero 
+because this is where the index numbering begins as the first element of the array. Additionally, because zero is the first index
+of an array, if you don't initialize the variable to zero it will have garbage values stored there instead.
+
+3. How would you describe conceptually what an array is to a child (5-8-year-old)? How would you describe 
+accessing an element in the array? Warning: keep your explanation simple or the child will not understand.
+
+An array is a way of structuring data of a common type(same type of date) together in an ordered way. The data in arrays follow
+one after another so there are no gaps between the data. Additionally, to access a single specific element in an array you need to 
+reference it at the specific index (place in memory that it is located) like this: identifier[0], which in this case represents
+the first element because index numbering begins at zero since it is easier for the computer to understand.
