@@ -1,0 +1,87 @@
+1. The two possible selection constructs that could have been used are Case-by-Case Conditions, and Compound Conditions. Specifically, by using the Switch construct and if else if. This is an example of how the months could be written: 
+
+  
+
+Switch 
+
+#include <stdio.h> 
+
+  
+
+int main() 
+
+{ 
+
+	printf("Input the value for the month\n"); 
+
+	scanf_s("%d", &months); 
+
+  
+
+	switch(months){ 
+
+  
+
+	case A : printf("SEP-01"\n); 
+
+	break; 
+
+	case B : printf("OCT-01"\n); 
+
+	break; 
+
+       } 
+
+	return 0; 
+
+  
+
+  
+
+  
+
+} 
+
+  
+
+if else if 
+
+#include <stdio.h> 
+
+  
+
+int main() 
+
+{ 
+
+	printf("Input the value for the month\n"); 
+
+	scanf_s("%d", &months); 
+
+	if(months==1) 
+
+	{ 
+
+		printf("JAN-01\n"); 
+
+	} 
+
+	else if(months==2) 
+
+	{ 
+
+		printf("FEB-01\n");	 
+
+	} 
+
+  
+
+	return 0; 
+
+  
+
+} 
+
+2. While, do while and for are 3 types of iteration constructs. I used do while for the validation routines because instead of having multiple smaller functions, everything necessary is within the stated while condition and can perform all the validations easily within the same iteration while the condition remains true which is great for the well-being log and the morning and evening rating’s sections of the code. 
+
+3. I used the debugger on Visual Studio to help me to check my code because it easily would tell me exactly where the problems were located, and to point out all my logical errors so that I could fix them. But also, matrix helped with the debugging as well and its error messages would tell me exactly where the issue were and I could then easily change and fix them. 
