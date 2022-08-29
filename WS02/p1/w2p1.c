@@ -2,10 +2,9 @@
 	==================================================
 	Workshop #2 (Part-1):
 	==================================================
-	Name   :
-	ID     :
-	Email  :
-	Section:
+	Name   : Maikel Mirzadegan
+	Date   : Sep 2021
+	
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
